@@ -1,0 +1,85 @@
+# 所有网页的统一标题
+# 标题建议统一格式，如：计算机体系结构实验（2022春季） | 哈工大（深圳）
+site_name: 编译原理实验 (2022 春季) | 哈工大 (深圳)
+# 版权信息————记得更新年份
+copyright: "Copyright &copy; 2019 - 2022 哈尔滨工业大学（深圳）"
+# 仓库名称(非必须)————可自定义
+repo_name: " HITSZ-ECEI-CS/Compiler"
+# 仓库URL(非必须)
+repo_url: "https://gitee.com/hitsz-cslab/Compiler"
+
+# 所使用的 Markdown 扩展————一般不需要改动
+markdown_extensions:
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  # 支持 emoji 表情
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - admonition
+  - mdx_math:
+      enable_dollar_delimiter: True
+    
+extra_javascript: 
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+
+  # - mathjaxhelper.js
+
+# GiteePage 主题————使用统一模板：material
+theme:
+  language: "zh"
+  name: material
+  features:
+    - navigation.tabs
+  icon:
+    # 网页标题左侧的图标————可更换成其他 FontAwesome 图标，详见https://fontawesome.com/
+    logo: fontawesome/solid/desktop
+    repo: fontawesome/brands/git-alt
+    # favicon: fontawesome/solid/microchip
+  palette:
+    primary: "blue" # 网页底色
+    accent: "red" # 交互元素颜色
+
+# 导航设置
+# （1）最多三级缩进，每一级缩进对应一个级别层次
+# （2）可使用中文或其他语言的字符，但文字与markdown文件之间的冒号必须是英文冒号
+nav:
+  - "首页":
+      - 实验概述: index.md
+      - 实验环境及代码规范: restrict.md
+      - 脚本工具: scripts.md
+      - 问题反馈: report.md
+  - "实验一: 词法分析":
+      - 实验概述: lab1/overview.md
+      - 框架接口介绍: lab1/api.md
+      - 实验步骤: lab1/step.md
+  - "实验二: 语法分析":
+      - 实验概述: lab2/overview.md
+      - 框架接口介绍: lab2/api.md
+      - 实验步骤: lab2/step.md
+  - "实验三: 语义分析与 IR 生成":
+      - 实验概述: lab3/overview.md
+      - 框架接口介绍: lab3/api.md
+      - 实验步骤: lab3/step.md
+  - "实验四: 汇编生成":
+      - 实验概述: lab4/overview.md
+      - 框架接口介绍: lab4/api.md
+      - 实验步骤: lab4/step.md
+      - 附加题: lab4/extra.md
+  - "毕昇杯广告":
+      - "毕昇杯广告": advertise/advertise.md
